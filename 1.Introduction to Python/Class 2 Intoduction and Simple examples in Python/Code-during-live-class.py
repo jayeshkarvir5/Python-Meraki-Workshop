@@ -78,26 +78,26 @@ Right indentation and better readability. The line after if and else have indent
 
 a = 10
 if a * 2 == 20:
-    print ("this worked")
+ print ("this worked")
 else:
-    print ("Variable a when mutiplied by 2 does not give 20.")
-    
+ print ("Variable a when mutiplied by 2 does not give 20.")
+  
 Try this out in meraki app: Copy lines 79 to 83 in meraki app and see the output.
-    
-    
+  
+  
 
 counter = 1
 while counter < 10:
-    print ("The counter is" + str(counter))
-    counter = counter + 1
-    print ('--------')
+ print ("The counter is" + str(counter))
+ counter = counter + 1
+ print ('--------')
 
 Try this out in meraki app: Copy lines 89 to 93 in meraki app and see the output.
 
 counter = 1
 while counter < 10:
-    print ("The counter is" + str(counter))
-    counter = counter + 1
+ print ("The counter is" + str(counter))
+ counter = counter + 1
 print ('--------')
 
 Try this out in meraki app: Copy lines 97 to 101 in meraki app and see the output.
@@ -123,13 +123,13 @@ In this example,
 
 counter = 1
 if counter > 1:
-	counter = 2
-	counter = 3
-	counter = 4
-	print(counter)
+ counter = 2
+ counter = 3
+ counter = 4
+ print(counter)
 while counter < 10:
-	counter = counter + 1
-	print (counter)
+ counter = counter + 1
+ print (counter)
 
 Lines 126 to 129 are in same block of 'if'. Block 1
 Lines 131,132 are in same block of 'while'. Block 2
@@ -142,13 +142,13 @@ In this example,
 
 counter = 1
 if counter > 0:
-	counter = 10
-	counter = 2
-	counter = 3
-	counter = 4
-	print(counter)
+ counter = 10
+ counter = 2
+ counter = 3
+ counter = 4
+ print(counter)
 while counter < 10:
-	counter = counter + 1
+ counter = counter + 1
 print (counter)
 
 Lines 145 to 149 are in same block of 'if'. Block 1
@@ -162,14 +162,14 @@ In this example,
 
 counter = 1
 if counter > 0:
-	counter = 10
-	counter = 2
-	counter = 3
-	counter = 4
-	print(counter)
-    while counter < 10:
-        counter = counter + 1
-        print (counter)
+ counter = 10
+ counter = 2
+ counter = 3
+ counter = 4
+ print(counter)
+ while counter < 10:
+  counter = counter + 1
+  print (counter)
 
 Lines 165 to 169 are in same block of 'if'. Block 1
 Lines 171 and 172 are in same block of 'while'. Block 2
