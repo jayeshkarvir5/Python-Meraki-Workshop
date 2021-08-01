@@ -16,9 +16,9 @@ print(pi)
 
 # Numeric Data type
 """
-integer 12 -12
-float 3.14 -3.14 3.0 -3.0
-Complex no. 4 + 5j (The value of j is sqrt(-1). So 4 + 5j is 4 + 5*sqrt(-1))
+integer 12 -12 (int)
+float 3.14 -3.14 3.0 -3.0 (float)
+Complex no. 4 + 5j (The value of j is sqrt(-1). So 4 + 5j is 4 + 5*sqrt(-1)) (complex)
 Complex will not be used frequently so its ok if you dont understand it well. 
 """
 
@@ -26,7 +26,7 @@ Complex will not be used frequently so its ok if you dont understand it well.
 """
 gives the type of the variable
 """
-print(type(1110)) integer
+print(type(1110))
 print(type(-10000))
 print(type(3.14))
 print(type(-3.14))
@@ -34,9 +34,11 @@ print(type(3.2+1j))
 print(type(-99 + 1.1j))
 print(type(-3.1 - 1.1j))
 print(type(3.0 - 1.0j))
+print(type(0+2.0j))
+print(type(2.0j))
 print(type("Jayesh is a good teacher"))
 print(type("J"))
-print("Jayesh is a good teacher")
+print('Jayesh is a good teacher')
 print(type('J'))
 print(type('123'))
 print(type("123"))
@@ -87,8 +89,8 @@ print(type(myinput))
 """
 Changing datatype of variable is called typecasting.
 The concept of typecasting is that we convert variable or constant from one datatype to another.
-This will be covered in more detail in future classes.
-In the above code myinput is string and on 79 type is changed from string to int.
+This will be covered in more detail in the future classes.
+In the above code myinput is string and on line 79 and 83 type is changed from string to int.
 
 * Try this in Meraki app: Copy the lines 77 to 84 and observe the output.
   Try different inputs like string, integer, float or complex. 
@@ -116,6 +118,3 @@ In the above code myinput is string and on 79 type is changed from string to int
 # c) number
 # d) Error
 # """
-
-print(type(0+2.0j))
-print(type(2.0j))
