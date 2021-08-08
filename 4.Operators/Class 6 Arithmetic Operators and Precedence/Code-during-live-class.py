@@ -67,23 +67,23 @@ Order of precedence
 
 4. + -	Addition and subtraction
 
->> <<	Right and left bitwise shift
+5. >> <<	Right and left bitwise shift
 
-&	Bitwise 'AND'td>
+6. &	Bitwise 'AND'
 
-^ |	Bitwise exclusive `OR' and regular `OR'
+7. ^ |	Bitwise exclusive 'OR' and regular 'OR'
 
-<= < > >=	Comparison operators
+8. <= < > >=	Comparison operators
 
-<> == !=	Equality operators
+9. <> == !=	Equality operators
 
-= %= /= //= -= += *= **=	Assignment operators
+10. = %= /= //= -= += *= **=	Assignment operators
 
-is is not	Identity operators
+11. is is not	Identity operators
 
-in not in	Membership operators
+12. in not in	Membership operators
 
-not or and	Logical operators
+13. not or and	Logical operators
 """
 
 a = 10
