@@ -92,6 +92,9 @@ print("apple" not in x)
 """
 Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location:
 is, is not
+Do no use this for int variables. Read more on 
+https://stackoverflow.com/questions/306313/is-operator-behaves-unexpectedly-with-integers
+https://stackoverflow.com/questions/13782451/why-is-this-string-comparison-returning-false (1st answer from 2nd link)
 """
 """
 1
