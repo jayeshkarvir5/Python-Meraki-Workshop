@@ -55,6 +55,7 @@ print(int_list[-3])
 list2 = ["this is a string", 1, 1+1j, 1.0]
 
 print("========Multiple data types========")
+
 print(list2)
 
 int_list = [1, 2, 3, 4, [5,6,7,8]]
@@ -69,6 +70,13 @@ print(int_list[4])
 print(int_list[4][2])
 
 print("========Mutable========")
+"""
+https://docs.python.org/3/library/functions.html#id
+
+https://stackoverflow.com/questions/121396/accessing-object-memory-address
+
+https://www.geeksforgeeks.org/id-function-python/
+"""
 var = 5
 print(id(var))
 var += 5
@@ -148,6 +156,6 @@ print(int_list[:-2])
 print(int_list[0:-1:2])
 print(len(int_list))
 # 0:7:2
-# 0->6 
+# 0->6
 print(int_list[0:len(int_list):2])
 
