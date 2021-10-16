@@ -129,6 +129,34 @@ avg = my_list[0]
 max = my_list[0]
 min = my_list[0]
 
+# Method 1 : Inefficient way
+for element1 in my_list:
+	max_bool = True
+	for element2 in my_list:
+		if element1 < element2:
+			max_bool = False
+			break
+	if max_bool == True:
+		answer = element1
+		break
+print("Max is ", answer)
+
+# Method 2 : Inefficient but efficient than Method 1
+index1 = 0
+while index1 < len(my_list):
+	max_bool = True
+	index2 = index1 + 1
+	while index2 < len(my_list):
+		if my_list[index1] < my_list[index2]:
+			max_bool = False
+			break
+		index2 += 1
+	if max_bool == True:
+		answer = my_list[index1]
+		break
+	index1 += 1
+
+# Method 3 : Most efficient method
 index = 1
 while index < len(my_list):
 	avg += my_list[index]
@@ -169,3 +197,87 @@ all_list.extend(range(1,21))
 print(all_list)
 print("Even list is",all_list[1:21:2])
 print("Odd list is",all_list[0:21:2])
+
+# KBC Question
+question_list = [ "How many continents are there?",  "What is the capital of India?","NG mei kaun se course padhaya jaata hai?"]
+options_list = [
+	["Four", "Nine", "Seven", "Eight"],
+	["Chandigarh", "Bhopal", "Chennai", "Delhi"],
+	["Software Engineering", "Counseling", "Tourism", "Agriculture"]
+]
+
+print(options_list[0][2])
+print(options_list[1][3])
+print(options_list[2][0])
+
+# Example
+# Find 2nd largest element
+list1 = [100, -1, 10, 21, -35, 40, 39, 100]
+# 2nd largest
+max = list1[0]
+index = 1
+index_of_max = 0
+while index < len(list1):
+	if list1[index] > max:
+		index_of_max = index
+		max = list1[index]
+	index += 1
+print("max is ",max)
+print("index of max", index_of_max)
+
+# Assumption: When 2nd largest can be equal to the largest
+index = 0
+max2 = list1[0]
+index_of_max2 = 0
+if(index_of_max == 0):
+	max2 = list1[1]
+	index_of_max2 = 1
+	index = 2
+while index < len(list1):
+	if list1[index] > max2 and index != index_of_max:
+		max2 = list1[index]
+		index_of_max2 = index
+	index += 1
+print("Max 2 is ", max2)
+print("index of max2", index_of_max2)
+
+# Assumption: When 2nd largest can be equal to the largest
+index = 0
+max2 = list1[0]
+index_of_max2 = 0
+if index_of_max == 0:
+	max2 = list1[1]
+	index_of_max2 = 1
+	index = 2
+while index < len(list1):
+	if list1[index] > max2 and list1[index] < max:
+		max2 = list1[index]
+		index_of_max2 = index
+	index += 1
+print("Max 2 is ", max2)
+print("index of max2", index_of_max2)
+
+# Example
+# Count distinct elements in the list
+full_list = ['a','b','c','e','a','b']
+distinct_list = []
+
+index = 0
+while index < len(full_list):
+	element  = full_list[index]
+	index2 = 0
+	not_present = True
+	while index2 < len(distinct_list):
+		if element == distinct_list[index2]:
+			not_present = False
+			break
+		index2 += 1
+	if not_present:
+		distinct_list.append(element)
+	index += 1
+print("Distinct list is", distinct_list)
+
+index = 0
+while index < len(distinct_list):
+	print('Count of ',distinct_list[index],'is', full_list.count(distinct_list[index]))
+	index += 1
