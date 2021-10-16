@@ -259,6 +259,12 @@ print("index of max2", index_of_max2)
 
 # Example
 # Count distinct elements in the list
+# Can also be solved using Dictionary(Most efficient)
+# Can also be solved using set(Same efficiency but cleaner way)
+"""
+Dictionary -> https://www.w3schools.com/python/python_dictionaries.asp
+Set -> https://www.w3schools.com/python/python_sets.asp
+"""
 full_list = ['a','b','c','e','a','b']
 distinct_list = []
 
