@@ -56,6 +56,11 @@ print(dict_3)
 item = dict_3.popitem()
 print(item)
 print(dict_3)
+"""
+Popitem on an empty list will raise an error.
+dict_4 = {}
+dict_4.popitem()
+"""
 
 # setdefault
 dict_2.setdefault(3, 'four')

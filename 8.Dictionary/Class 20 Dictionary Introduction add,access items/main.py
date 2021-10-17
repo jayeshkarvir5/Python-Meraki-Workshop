@@ -4,6 +4,18 @@ Dictionaries are used to store data values in key:value pairs.
 A dictionary is a collection which is ordered, changeable and does not allow
 duplicates
 Dictionaries are written with curly brackets, and have keys and values
+
+When to use Dictionary?
+1.When the data has a unique reference that can be associated with the value.
+2.When quick access to data items is important. Dictionaries are designed to let us find a value instantly without the need for searching through the whole collection.
+3.As dictionaries are mutable, it is not a good idea to use dictionaries to store data that shouldn’t be modified in the first place.
+4.When memory consideration is not an important factor for the application. Compared to lists and tuples, dictionaries take up more space in memory.
+5.When the data order is not important.
+
+Few tutorials:
+https://towardsdatascience.com/python-dictionaries-651acb069f94
+
+https://realpython.com/python-dicts/
 """
 
 car_dict = {
@@ -72,6 +84,7 @@ print(d)
 Tuples
 https://www.w3schools.com/python/python_tuples.asp
 """
+
 # Properties of keys
 """
 More than one entry per key is not allowed ( no duplicate key is allowed)
