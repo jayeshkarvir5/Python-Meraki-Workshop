@@ -2,9 +2,10 @@
 # Example 1
 # input : - 3 x 3 square (9 numbers)
 # Output :- yes if its a magic square or else no
-magic_square = [[8,1,6],
+magic_square = [
+				[8,1,6],
 				[3,5,7],
-				[4,9,-2]
+				[4,9,2]
 				]
 # sum of all element in a row = sum of all elements in a column = sum of all elements in a diagonal
 
