@@ -1,4 +1,5 @@
 # Doubt class
+# Example 1
 # input : - 3 x 3 square (9 numbers)
 # Output :- yes if its a magic square or else no
 magic_square = [[8,1,6],
@@ -88,6 +89,11 @@ if magic_square_boolean:
 else:
 	print("Not a magic square!")
 
+
+
+
+
+# Example 2
 # Find the sum of number digits in List.
 # The original list is : [12, 67, 98, 34]
 # List Integer Summation : [3, 13, 17, 7]
