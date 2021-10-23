@@ -8,13 +8,12 @@ magic_square = [[8,1,6],
 # sum of all element in a row = sum of all elements in a column = sum of all elements in a diagonal
 
 
-sum_rows = []
 magic_square_boolean = True
 magic_sum = 0
 # diagonal 1
 # (0,0), (1,1), (2,2)
 
-sum_diag = []
+sum_diag = [] # just for reference
 for i in range(0,len(magic_square)):
 	print(magic_square[i][i])
 	magic_sum = magic_sum + magic_square[i][i]
@@ -36,7 +35,7 @@ print(sum)
 sum_diag.append(sum)
 print(sum_diag)
 
-if magic_sum != sum:
+if magic_sum != sum:  # if any sum does not match then it is not a magic square
 	magic_square_boolean = False
 
 # row
@@ -50,6 +49,7 @@ if magic_sum != sum:
 # (1,0), (1,1), (1,2)
 # (2,0), (2,1), (2,2)
 print("==========================")
+sum_rows = [] # just for reference
 if magic_square_boolean:
 	for i in range(0,len(magic_square)):
 		sum = 0
@@ -59,7 +59,7 @@ if magic_square_boolean:
 		print("Row no is", i, "sum is", sum)
 		print("==========================")
 		sum_rows.append(sum)
-		if magic_sum != sum:
+		if magic_sum != sum: # if any sum does not match then it is not a magic square
 			magic_square_boolean = False
 			break
 	print(sum_rows)
@@ -68,7 +68,7 @@ if magic_square_boolean:
 # (0,0) + (1,0) + (2,0)
 # (0,1), (1,1), (2,1)
 # (0,2), (1,2), (2,2)
-sum_cols = []
+sum_cols = [] # just for reference
 if magic_square_boolean:
 	for i in range(0,len(magic_square)):
 		sum = 0
@@ -78,7 +78,7 @@ if magic_square_boolean:
 		print("Col no is", i, "sum is", sum)
 		print("==========================")
 		sum_cols.append(sum)
-		if magic_sum != sum:
+		if magic_sum != sum: # if any sum does not match then it is not a magic square
 			magic_square_boolean = False
 			break
 	print(sum_cols)
@@ -105,7 +105,7 @@ answer = []
 # dividend = quotient = 945 -> iteration 1
 # 945 / 10 -> r= 5, q=94
 # sum = 11(6+5)
-# 94 / 10 -> r= 4, q=9 sum=15
+# 94 / 10 -> r= 4, q=9 sum=15 -> iteration 2
 # 9/10 -> r=9, q=0
 for i in range(0,len(input_list)):
 	dividend = input_list[i]
@@ -114,7 +114,7 @@ for i in range(0,len(input_list)):
 		print("Dividend is", dividend)
 		remainder = dividend % 10
 		sum += remainder
-		dividend = int(dividend / 10)
+		dividend = int(dividend / 10) # quotient
 		print("Remainder is", remainder)
 	print("Sum is",sum)
 	print("=======================")
