@@ -7,6 +7,13 @@ magic_square = [
 				[3,5,7],
 				[4,9,2]
 				]
+# magic_square = [
+# 				[16,3,2,13],
+# 				[5,10,11,8],
+# 				[9,6,7,12],
+# 				[4,15,14,1]
+# 				]
+# The code is generic and it can handle 4x4,5x5,...nxn square. To test it out you may uncomment the above variable.
 # sum of all element in a row = sum of all elements in a column = sum of all elements in a diagonal
 
 
