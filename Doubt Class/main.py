@@ -98,7 +98,30 @@ else:
 	print("Not a magic square!")
 
 
-
+# Short version of above code
+is_magic_square = True
+sum_diag1 = 0
+length = len(magic_square)
+for i in range(0,length):
+	sum_diag1 += magic_square[i][i]
+sum_diag2 = 0
+for i in range(0,length):
+	sum_col = 0
+	sum_row = 0
+	sum_diag2 += magic_square[i][length-i-1]
+	# magic_square[i] and magic_square will have same length because the input is a square. So we can use length variable in inner loop.
+	for j in range(0,length):
+		sum_col += magic_square[j][i]
+		sum_row += magic_square[i][j]
+	if sum_diag1 != sum_col or sum_diag1 != sum_row:
+		is_magic_square = False
+		break
+if sum_diag1 != sum_diag2:
+	is_magic_square = False
+if is_magic_square:
+	print("This is a magic square!")
+else:
+	print("Not a magic square!")
 
 
 # Example 2
